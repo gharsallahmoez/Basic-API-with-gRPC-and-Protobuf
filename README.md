@@ -17,3 +17,16 @@
     
 ## Generate Proto files : 
     protoc --proto_path=proto --proto_path=third_party --go_out=plugins=grpc:proto service.proto
+    
+## run server and client :
+open a first terminal and run : 
+ 
+    go run server/main.go
+open a second terminal and run :
+    
+    go run cleint/main.go
+    
+## test with web browser 
+    http://127.0.0.1:8080/add/5/5
+    
+    http://127.0.0.1:8080/mult/6/4
